@@ -1,2 +1,26 @@
-# Trabalho-de-Estrutura-de-Dados
-Trabalho de Estrutura de Dados
+# Nome do Projeto
+
+Projeto para gerenciamento dinamico de uma biblioteca
+
+## 👨‍💻 Integrantes
+- Felipe Silva
+- Gabriel Tinelli Rodrigues
+- Perola Catrinque dos Santos
+- Rodrigo Lucas Leão Bastos
+
+## 🚀 Como executar
+1. Clone o repositório:
+   git clone https://github.com/seu-usuario/seu-repo.git
+
+2. Abra no IntelliJ / Eclipse
+
+3. Execute a classe principal
+
+## 🛠️ Tecnologias usadas
+- Java
+
+## 📂 Estrutura do projeto
+src/
+  main/java/
+
+## 📌 Observações
