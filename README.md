@@ -2,13 +2,13 @@
 
 Projeto para gerenciamento dinamico de uma biblioteca
 
-## 👨‍💻 Integrantes
+##  Integrantes
 - Felipe Silva
 - Gabriel Tinelli Rodrigues
 - Perola Catrinque dos Santos
 - Rodrigo Lucas Leão Bastos
 
-## 🚀 Como executar
+##  Como executar
 1. Clone o repositório:
    git clone https://github.com/seu-usuario/seu-repo.git
 
@@ -16,11 +16,11 @@ Projeto para gerenciamento dinamico de uma biblioteca
 
 3. Execute a classe principal
 
-## 🛠️ Tecnologias usadas
+##  Tecnologias usadas
 - Java
 
-## 📂 Estrutura do projeto
+##  Estrutura do projeto
 src/
   main/java/
 
-## 📌 Observações
+##  Observações
