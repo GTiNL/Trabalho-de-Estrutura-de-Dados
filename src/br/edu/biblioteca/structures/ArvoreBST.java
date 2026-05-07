@@ -1,9 +1,7 @@
 package br.edu.biblioteca.structures;
 
-// Arvore Binaria de Busca - usada como indice para busca por ISBN ou titulo
 public class ArvoreBST<K extends Comparable<K>, V> {
 
-    // No interno da arvore
     private class No {
         K chave;
         V valor;
@@ -26,7 +24,6 @@ public class ArvoreBST<K extends Comparable<K>, V> {
         this.size = 0;
     }
 
-    // Insere ou atualiza um par chave-valor
     public void put(K chave, V valor) {
         raiz = inserir(raiz, chave, valor);
     }
@@ -43,12 +40,11 @@ public class ArvoreBST<K extends Comparable<K>, V> {
         } else if (comparacao > 0) {
             no.direita = inserir(no.direita, chave, valor);
         } else {
-            no.valor = valor; // atualiza se ja existe
+            no.valor = valor;
         }
         return no;
     }
 
-    // Busca o valor pela chave, retorna null se nao achar
     public V get(K chave) {
         No resultado = buscar(raiz, chave);
         if (resultado != null) {
@@ -72,12 +68,10 @@ public class ArvoreBST<K extends Comparable<K>, V> {
         }
     }
 
-    // Verifica se a chave existe
     public boolean containsKey(K chave) {
         return get(chave) != null;
     }
 
-    // Remove e retorna o valor da chave
     public V remove(K chave) {
         V valor = get(chave);
         if (valor != null) {
@@ -98,17 +92,13 @@ public class ArvoreBST<K extends Comparable<K>, V> {
         } else if (comparacao > 0) {
             no.direita = remover(no.direita, chave);
         } else {
-            // Encontrou o no para remover
 
-            // Caso 1: sem filho esquerdo
             if (no.esquerda == null) {
                 return no.direita;
             }
-            // Caso 2: sem filho direito
             if (no.direita == null) {
                 return no.esquerda;
             }
-            // Caso 3: dois filhos - pega o menor da subarvore direita
             No sucessor = encontrarMinimo(no.direita);
             no.chave = sucessor.chave;
             no.valor = sucessor.valor;
@@ -117,7 +107,6 @@ public class ArvoreBST<K extends Comparable<K>, V> {
         return no;
     }
 
-    // Encontra o no com menor chave na subarvore
     private No encontrarMinimo(No no) {
         while (no.esquerda != null) {
             no = no.esquerda;
@@ -125,7 +114,6 @@ public class ArvoreBST<K extends Comparable<K>, V> {
         return no;
     }
 
-    // Percorre em ordem (esquerda -> raiz -> direita) e retorna valores ordenados
     public Vetor<V> inOrder() {
         Vetor<V> resultado = new Vetor<>();
         percorrerEmOrdem(raiz, resultado);
@@ -141,7 +129,6 @@ public class ArvoreBST<K extends Comparable<K>, V> {
         percorrerEmOrdem(no.direita, resultado);
     }
 
-    // Retorna todas as chaves em ordem
     public Vetor<K> chaves() {
         Vetor<K> resultado = new Vetor<>();
         percorrerChaves(raiz, resultado);
@@ -157,12 +144,10 @@ public class ArvoreBST<K extends Comparable<K>, V> {
         percorrerChaves(no.direita, resultado);
     }
 
-    // Retorna o tamanho
     public int tamanho() {
         return size;
     }
 
-    // Verifica se esta vazia
     public boolean isEmpty() {
         return size == 0;
     }
