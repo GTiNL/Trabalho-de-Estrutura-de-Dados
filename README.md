@@ -9,10 +9,9 @@ Projeto para gerenciamento dinamico de uma biblioteca
 - Rodrigo Lucas Leão Bastos
 
 ##  Como executar
-1. Clone o repositório:
-   git clone https://github.com/GTiNL/seu-repo.git
+1. Clone o repositório
 
-2. Abra no IntelliJ / Eclipse
+2. Abra no IntelliJ / Eclipse / VS Code
 
 3. Execute a classe principal
 
