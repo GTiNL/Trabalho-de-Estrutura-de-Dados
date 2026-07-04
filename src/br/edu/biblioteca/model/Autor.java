@@ -1,7 +1,7 @@
 package br.edu.biblioteca.model;
 
 public class Autor {
-
+    // Atributos privados da classe
     private int id;
     private String nome;
 
