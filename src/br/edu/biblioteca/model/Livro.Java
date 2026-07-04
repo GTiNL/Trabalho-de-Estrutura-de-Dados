@@ -2,7 +2,7 @@ package br.edu.biblioteca.model;
 
 import br.edu.biblioteca.structures.Vetor;
 
-public class Livro {
+public class Livro { // classe livro 
 
     private String isbn;
     private String titulo;
