@@ -2,7 +2,7 @@ package br.edu.biblioteca.model;
 
 import java.time.LocalDate;
 
-public class Reserva {
+public class Reserva { //representa uma reserva de livro realizada por um usuário no sistema da biblioteca
 
     private int id;
     private int usuarioId;
