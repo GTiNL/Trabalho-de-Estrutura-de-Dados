@@ -1,6 +1,6 @@
 package br.edu.biblioteca.model;
 
-public class Multa {
+public class Multa { //classe multa
 
     private int id;
     private int emprestimoId;
