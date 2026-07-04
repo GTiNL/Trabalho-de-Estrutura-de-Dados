@@ -25,3 +25,5 @@ public class Exemplar {
         return "Exemplar #" + id + " | ISBN: " + isbnLivro + " | Status: " + status;
     }
 }
+
+}
