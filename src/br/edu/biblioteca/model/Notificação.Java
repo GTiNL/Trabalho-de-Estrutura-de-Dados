@@ -2,7 +2,8 @@ package br.edu.biblioteca.model;
 
 import java.time.LocalDate;
 
-public class Notificacao {
+public class Notificacao { //Representa uma notificação do sistema de biblioteca
+
 
     private int id;
     private int usuarioId;
