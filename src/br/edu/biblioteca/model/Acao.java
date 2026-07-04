@@ -1,6 +1,6 @@
 package br.edu.biblioteca.model;
 
-public class Acao {
+public class Acao { //classe que representa uma ação do sistema
 
     private String tipo;
     private String descricao;
